@@ -1,0 +1,13 @@
+{
+  "author": "Keith Walker",
+  "dependencies": [],
+  "license": "GPL",
+  "name": "kwalker-puppet-pbis",
+  "operatingsystem_support": [],
+  "project_page": "",
+  "requirements": [],
+  "source": "joinDomain",
+  "summary": "joinDomain",
+  "tags": [],
+  "version": "0.1.0"
+}
