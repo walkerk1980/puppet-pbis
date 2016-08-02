@@ -61,6 +61,11 @@ search $domaintojoin
     mode => '0644',
     content => $resolvfile
   }
+  
+  service { 'resolvconf':
+    ensure => running,
+    subscribe File['/etc/resolvconf/resolv.conf.d/base'],
+  }
 
 
 }
