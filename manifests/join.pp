@@ -49,8 +49,8 @@ root	ALL=(ALL:ALL) ALL
     unless => "/bin/echo $(/usr/bin/domainjoin-cli query)|/bin/grep OPTIVLABS",
   }
 
-  $resolvfile="nameserver 172.16.18.2
-nameserver 172.16.18.4
+  $resolvfile="nameserver $dns1
+nameserver $dns2
 search $domaintojoin
 "
 
