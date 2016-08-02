@@ -59,12 +59,13 @@ search $domaintojoin
     owner => root,
     group => root,
     mode => '0644',
-    content => $resolvfile
+    content => $resolvfile,
+    notify => Service['resolvconf'],
   }
-  
-  service { 'resolvconf':
+
+  service { 'resolvconf' :
+    name => 'resolvconf',
     ensure => running,
-    subscribe => File['/etc/resolvconf/resolv.conf.d/base'],
   }
 
 
