@@ -16,6 +16,8 @@ class puppet-pbis (
   $ldapbindpassword = $puppet-pbis::params::ldapbindpassword,
   $sudogroup = $puppet-pbis::params::sudogroup,
   $logingroup = $puppet-pbis::params::logingroup,
+  $dns1 = $puppet-pbis::params::dns1,
+  $dns2 = $puppet-pbis::params::dns2,
 ) inherits puppet-pbis::params {
 
 }
