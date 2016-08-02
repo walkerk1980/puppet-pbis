@@ -64,7 +64,7 @@ search $domaintojoin
   
   service { 'resolvconf':
     ensure => running,
-    subscribe File['/etc/resolvconf/resolv.conf.d/base'],
+    subscribe => File['/etc/resolvconf/resolv.conf.d/base'],
   }
 
 
