@@ -19,6 +19,7 @@ class puppet-pbis::install inherits puppet-pbis {
   exec { 'pbis-apt-get-update':
     command => '/usr/bin/apt-get update',
     refreshonly => true,
+    require => Apt::Source['powerbroker'],
   }
 
   package { 'pbis-open' :
