@@ -1,13 +1,21 @@
 {
   "author": "Keith Walker",
-  "dependencies": [],
+  "dependencies": [ apt ],
   "license": "GPL",
   "name": "kwalker-puppet-pbis",
-  "operatingsystem_support": [],
-  "project_page": "",
+  "operatingsystem_support": [
+      {
+        "operatingsystem": "Ubuntu",
+        "operatingsystemrelease": [ "12.04" ]
+        },
+    ],
+  "project_page": "https://github.com/walkerk1980/puppet-pbis",
+  "dependencies": [
+    { "name": "puppetlabs/apt", "version_requirement": ">= 2.2.0" },
+  ],
   "requirements": [],
-  "source": "joinDomain",
-  "summary": "joinDomain",
+  "source": "puppet-pbis",
+  "summary": "puppet-pbis",
   "tags": [],
   "version": "0.1.0"
 }
