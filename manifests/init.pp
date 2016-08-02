@@ -6,7 +6,7 @@
 #
 # Actions:
 #
-# Requires: see Modulefile
+# Requires: apt 
 #
 # Sample Usage:
 #
