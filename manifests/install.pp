@@ -35,7 +35,7 @@ class puppet-pbis::install inherits puppet-pbis {
     ./config AssumeDefaultDomain true
     ./config LoginShellTemplate /bin/bash
     ./config HomeDirTemplate %H/%U
-    ./config HomeDirUmask 077
+    ./config HomeDirUmask 077 
     ./config RequireMembershipOf '$domaintojoin\\$logingroup'
     "
 
