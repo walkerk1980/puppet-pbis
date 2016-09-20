@@ -46,7 +46,7 @@ root	ALL=(ALL:ALL) ALL
   exec { 'join':
     command => "/usr/local/bin/join-domain.sh $ldapbindaccount $ldapbindpassword",
     require => Class['puppet-pbis::install'],
-    unless => "/bin/echo $(/usr/bin/domainjoin-cli query)|/bin/grep OPTIVLABS",
+    unless => "/bin/echo $(/usr/bin/domainjoin-cli query)|/bin/grep upcase($domaintojoin)",
   }
 
   $resolvfile="nameserver $dns1
