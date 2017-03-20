@@ -8,8 +8,8 @@ class puppet-pbis::install inherits puppet-pbis {
     repos    => 'main',
     pin      => '500',
     key      => {
-      'source'     => 'http://repo.pbis.beyondtrust.com/yum/RPM-GPG-KEY-pbis',
-      'id'         => 'BE7FF72A6B7C8A9FAE061F4F2E52CD89C9CEECEF',
+      'source'     => 'http://repo.pbis.beyondtrust.com/apt/RPM-GPG-KEY-pbis',
+      'id'         => 'C7D6227D7D806F3FB194F51AFDE053D27237D0AC',
     },
     include  => {
       'deb' => true,
